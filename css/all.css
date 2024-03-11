@@ -109,16 +109,6 @@ img {
     margin-right: auto;
 }
 
-@media screen and (min-width: 600px) {
-    nav ul li {
-        float: left;
-        width: 25%;
-    }
-    p.travel{
-        width: 60%;
-        padding-left: 20%;
-    }
-}
 
 .skipmain {
     /* color: rgba(0, 0, 0, 0); */
@@ -138,4 +128,83 @@ img {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    /* Shared by tablet and computer */
+    nav ul li {
+        float: left;
+        width: 25%;
+    }
+    p.travel{
+        width: 60%;
+        padding-left: 20%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    /* Tablet, valid in both portrait and landscape mode */
+    /* Make font size larger */
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 23px;
+    }
+    .grid1 p {
+        font-size: 23px;
+    }
+    .grid1 h2 {
+        min-height: 105px;
+    }
+    /* Make nav text larger */
+    nav ul li a {
+        height: 30px;
+        font-size: 22px;
+    }
+    .current {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) and (max-aspect-ratio: 1/1) {
+    /* Portrait mode */
+    /* make font size even larger */
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 25px;
+    }
+    .grid1 p {
+        font-size: 25px;
+        width: 100%;
+        padding-left: 0%;
+    }
+    .grid1 h2 {
+        min-height: 120px;
+    }
+    /* Make padding smaller */
+    p.travel{
+        width: 80%;
+        padding-left: 10%;
+    }
+    /* Make image in travel page larger */
+    img.travel {
+        width: 60%;
+    }
+    /* Make page margins smaller */
+    main {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .grid1 {
+        padding: 0 0 0 0;
+    }
 }
